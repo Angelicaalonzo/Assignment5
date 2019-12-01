@@ -1,25 +1,31 @@
-class Bill{
+class Billing{
 string billDate;
 string description ;
 double amount; // bill total amount
 
-public Bill()
+public Billing(string b, string d, double a)
 {
-
+    this.billDate = b; 
+    this.description = d; 
+    this.amount = a; 
 }
 
 public string getBillInfo()
 {
-
+    return $"{billDate} {description} {amount}";
 }
 
 public double getBalance()
 {
-
+return (amount - Payment);
 }
 
 public bool addPayment(Payment P)
 {
+    if(verify() == true)
+    {
+        addPayment; 
+    }
 
 }
 
